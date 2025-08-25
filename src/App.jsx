@@ -1,14 +1,27 @@
+
 import { useState } from 'react'
-
-
+import Sidebar from './components/Sidebar'
+import Player from './components/Player'
+import Display from './components/Display'
 import './App.css'
+import { BrowserRouter } from 'react-router-dom'
 
 function App() {
   
   return (
     <>
-      <div>hi i am lakshya gupta</div>
-    </>
+    
+      <div className="h-screen bg-black">
+        <div className="h-[90%] flex">
+          
+          <Sidebar/>
+          <Display/>
+        </div>
+        <div>
+          <Player/>
+        </div>
+      </div>
+     </>
   )
 }
 
